@@ -11,6 +11,7 @@ This is some kind of [Damn-Vulnerable Service](https://github.com/vavkamil/aweso
 - `checkpoints` contains .ckpt files of pretrained DeepSpeech models. Pretrained models can be found [here](releases).
 - `training` includes notebook with data preparation and fitting for NB Classifier and vectorizer.
 - `pickles` folder are used to store them.
+- `example.ipynb` can be used as a quick-start guide.
 
 ### Installation
 
@@ -30,7 +31,7 @@ pip install -r requirements.txt
 
 ### Mitigations
 
-The robustness of original [LibriSpeech model]() can be increased using adversarial retraining with gaussian data augmentation. The example model can be found in [ Releases](releases). You can also try to use another controls, described [here](https://www.enisa.europa.eu/publications/securing-machine-learning-algorithms).
+The robustness of original [LibriSpeech model]() can be increased using adversarial retraining with gaussian data augmentation. The example model can be found in [Releases](releases). You can also try to use another controls, described [here](https://www.enisa.europa.eu/publications/securing-machine-learning-algorithms).
 
 To retrain a model with a new data [original trainig script](https://github.com/SeanNaren/deepspeech.pytorch/blob/master/deepspeech_pytorch/training.py) can be used. Simply replace 
 ```
