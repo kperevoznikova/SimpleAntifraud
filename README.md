@@ -1,5 +1,5 @@
 ## Simple Antifraud
-****
+
 This is a simplified voice antifraud system created as part of bachelor's thesis at [Moscow Polytechnic University](https://mospolytech.ru/). The system is based on a pre-trained DeepSpeech model, Naive Bayes classifier and TF-IDF vectorizer.
 
 Project was done to illustrate the impact of performing adversarial attacks on this type of systems so it should not be used in production. Even if you think that DeepSpeech is protected enough, the classifier is vulnerable to the [Bayesian poisoning](https://en.wikipedia.org/wiki/Bayesian_poisoning) itself. 
@@ -8,7 +8,7 @@ This is some kind of [Damn-Vulnerable Service](https://github.com/vavkamil/aweso
 
 ### Project structure
 
-- `checkpoints` contains .ckpt files of pretrained DeepSpeech models. Pretrained models can be found [here](releases).
+- `checkpoints` contains .ckpt files of pretrained DeepSpeech models. Pretrained models can be found [here](https://github.com/kperevoznikova/SimpleAntifraud/releases/tag/v0).
 - `training` includes notebook with data preparation and fitting for NB Classifier and vectorizer.
 - `pickles` folder are used to store them.
 - `example.ipynb` can be used as a quick-start guide.
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ### Mitigations
 
-The robustness of original [LibriSpeech model]() can be increased using adversarial retraining with gaussian data augmentation. The example model can be found in [Releases](releases). You can also try to use another controls, described [here](https://www.enisa.europa.eu/publications/securing-machine-learning-algorithms).
+The robustness of original [LibriSpeech model]() can be increased using adversarial retraining with gaussian data augmentation. The example models can be found in [Releases](https://github.com/kperevoznikova/SimpleAntifraud/releases/tag/v0). You can also try to use another controls, described [here](https://www.enisa.europa.eu/publications/securing-machine-learning-algorithms).
 
 To retrain a model with a new data [original trainig script](https://github.com/SeanNaren/deepspeech.pytorch/blob/master/deepspeech_pytorch/training.py) can be used. Simply replace 
 ```
