@@ -1,0 +1,6 @@
+__pycache__/
+.ipynb_checkpoints/
+outputs/
+checkpoints/*
+timing/*
+transcription_prepared/tmpfolder*

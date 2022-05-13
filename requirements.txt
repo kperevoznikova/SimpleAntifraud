@@ -1,0 +1,5 @@
+setuptools==60.7.0
+zipp==3.1.0
+pyyaml==5.4
+adversarial-robustness-toolbox==1.10.0
+textblob==0.17.1
